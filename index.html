@@ -1,144 +1,689 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 ltie9" lang="en-US"><![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
 
+
+<!-- Mirrored from iotlive.org/two/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Sep 2016 23:11:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.48-22 [XR&CO'2014] -->
-	<style type="text/css">
-	<!--
-
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="initial-scale=1.0" />	
+		
+	<link rel="pingback" href="xmlrpc.php" />
+	<title>IoTLive | #002</title>
+<link rel="alternate" type="application/rss+xml" title="IoTLive &raquo; Feed" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="IoTLive &raquo; Comments Feed" href="comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="IoTLive &raquo; Homepage Comments Feed" href="homepage/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/iotlive.org\/two\/wp-includes\/js\/wp-emoji-release.min.js?ver=d6db52b43d5654999f00107d0e885e2d"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
-
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
-
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
-
-#siteNavigation .current { background-color: #ccd; }
-
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
-
-
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
-
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
-
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
-
-
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-
-// -->
 </style>
+<link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/styles3a05.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='wp-content/themes/thekeynote-v1-03/stylebe8e.css?ver=d6db52b43d5654999f00107d0e885e2d' type='text/css' media='all' />
+<link rel='stylesheet' id='Open-Sans-google-font-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;subset=greek%2Ccyrillic-ext%2Ccyrillic%2Clatin%2Clatin-ext%2Cvietnamese%2Cgreek-ext&amp;ver=d6db52b43d5654999f00107d0e885e2d' type='text/css' media='all' />
+<link rel='stylesheet' id='superfish-css'  href='wp-content/themes/thekeynote-v1-03/plugins/superfish/css/superfishbe8e.css?ver=d6db52b43d5654999f00107d0e885e2d' type='text/css' media='all' />
+<link rel='stylesheet' id='dlmenu-css'  href='wp-content/themes/thekeynote-v1-03/plugins/dl-menu/componentbe8e.css?ver=d6db52b43d5654999f00107d0e885e2d' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='wp-content/themes/thekeynote-v1-03/plugins/font-awesome-new/css/font-awesome.minbe8e.css?ver=d6db52b43d5654999f00107d0e885e2d' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-fancybox-css'  href='wp-content/themes/thekeynote-v1-03/plugins/fancybox/jquery.fancyboxbe8e.css?ver=d6db52b43d5654999f00107d0e885e2d' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css'  href='wp-content/themes/thekeynote-v1-03/plugins/flexslider/flexsliderbe8e.css?ver=d6db52b43d5654999f00107d0e885e2d' type='text/css' media='all' />
+<link rel='stylesheet' id='style-responsive-css'  href='wp-content/themes/thekeynote-v1-03/stylesheet/style-responsivebe8e.css?ver=d6db52b43d5654999f00107d0e885e2d' type='text/css' media='all' />
+<link rel='stylesheet' id='style-custom-css'  href='wp-content/themes/thekeynote-v1-03/stylesheet/style-custombe8e.css?ver=d6db52b43d5654999f00107d0e885e2d' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-main-css'  href='wp-content/plugins/masterslider/public/assets/css/masterslider.main7d47.css?ver=2.9.6' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-custom-css'  href='wp-content/uploads/masterslider/custom77ae.css?ver=2' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jqueryc1d8.js?ver=1.11.3'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='index.html' />
+<script>var ms_grabbing_curosr = 'wp-content/plugins/masterslider/public/assets/css/common/grabbing.html', ms_grab_curosr = 'wp-content/plugins/masterslider/public/assets/css/common/grab.html';</script>
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('indexb24e.html?wordfence_logHuman=1&amp;hid=70DAB82DCB47B630BFB443E6C72D9801');
+</script><link rel="shortcut icon" href="wp-content/uploads/2015/03/favicon.ico" type="image/x-icon" /><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49648209-1', 'auto');
+  ga('send', 'pageview');
+
+</script><!-- load the script for older ie version -->
+<!--[if lt IE 9]>
+<script src="http://iotlive.org/two/wp-content/themes/thekeynote-v1-03/javascript/html5.js" type="text/javascript"></script>
+<script src="http://iotlive.org/two/wp-content/themes/thekeynote-v1-03/plugins/easy-pie-chart/excanvas.js" type="text/javascript"></script>
+<![endif]-->
 </head>
 
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
+<body class="home page page-id-3304 page-template-default _masterslider _msp_version_2.9.6">
+<div class="body-wrapper  float-menu" data-home="http://iotlive.org/two" >
+		<header class="gdlr-header-wrapper">
+		<!-- top navigation -->
+				<div class="top-navigation-wrapper">
+			<div class="top-navigation-container container">
+				<div class="top-navigation-left">
+					<div class="top-social-wrapper">
+						<div class="social-icon">
+<a href="http://iotlive.org/cdn-cgi/l/email-protection#244c4148484b644d4b50484d52410a4b5643" target="_blank" >
+<img width="32" height="32" src="wp-content/themes/thekeynote-v1-03/images/dark/social-icon/email.png" alt="Email" />
+</a>
+</div>
+<div class="social-icon">
+<a href="https://plus.google.com/events/c9g6ikkcp9d481b14atbo2d15s4" target="_blank" >
+<img width="32" height="32" src="wp-content/themes/thekeynote-v1-03/images/dark/social-icon/google-plus.png" alt="Google Plus" />
+</a>
+</div>
+<div class="social-icon">
+<a href="https://twitter.com/IoTLive" target="_blank" >
+<img width="32" height="32" src="wp-content/themes/thekeynote-v1-03/images/dark/social-icon/twitter.png" alt="Twitter" />
+</a>
+</div>
+<div class="clear"></div>					</div>
+				</div>
+				<div class="top-navigation-right">
+					<div class="top-navigation-right-text">
+						IoTLive #002					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<!-- logo -->
+		<div class="gdlr-header-inner">
+			<div class="gdlr-header-container container">
+				<!-- logo -->
+				<div class="gdlr-logo">
+					<a href="http://iotlive.org/two" >
+						<img src="wp-content/uploads/2015/03/logo196.png" alt="" width="196" height="34" />					</a>
+					<div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation" ><button class="dl-trigger">Open Menu</button><ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu"><li id="menu-item-3525" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3304 current_page_item menu-item-3525"><a href="index.html">Home</a></li>
+<li id="menu-item-3639" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3639"><a href="#">Sessions</a>
+<ul class="dl-submenu">
+	<li id="menu-item-3521" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3521"><a href="panel-sessions/index.html">Program &#8211; Panel Sessions</a></li>
+	<li id="menu-item-3523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3523"><a href="keynote-sessions/index.html">Program &#8211; Keynotes</a></li>
+	<li id="menu-item-3520" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3520"><a href="demo-sessions/index.html">Program &#8211; Demos</a></li>
+</ul>
+</li>
+<li id="menu-item-3648" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3648"><a href="speakers/index.html">Speakers &#038; Sponsors</a></li>
+<li id="menu-item-3404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3404"><a href="watch/index.html">Watch / Videos</a></li>
+<li id="menu-item-3680" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3680"><a href="#">Past Events</a>
+<ul class="dl-submenu">
+	<li id="menu-item-3681" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3681"><a href="http://iotlive.org/one">#001</a></li>
+</ul>
+</li>
+<li id="menu-item-3483" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3483"><a href="contact-page/index.html">Contact</a></li>
+</ul></div>				</div>
 
-	<meta name="generator" content="HTTrack Website Copier/3.x">
-	<TITLE>Local index - HTTrack</TITLE>
-</HEAD>
-<BODY>
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="iotlive.org/two/index.html">
-						IoTLive | #002
-					</A>		
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.48-22 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=iotlive.org/two/index.html">
+				<!-- navigation -->
+				<div class="gdlr-navigation-wrapper"><nav class="gdlr-navigation" id="gdlr-main-navigation" role="navigation"><ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu"><li  class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3304 current_page_item menu-item-3525menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3304 current_page_item menu-item-3525 gdlr-normal-menu"><a href="index.html">Home</a></li>
+<li  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3639menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3639 gdlr-normal-menu"><a href="#">Sessions</a>
+<ul class="sub-menu">
+	<li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3521"><a href="panel-sessions/index.html">Program &#8211; Panel Sessions</a></li>
+	<li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3523"><a href="keynote-sessions/index.html">Program &#8211; Keynotes</a></li>
+	<li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3520"><a href="demo-sessions/index.html">Program &#8211; Demos</a></li>
+</ul>
+</li>
+<li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3648menu-item menu-item-type-post_type menu-item-object-page menu-item-3648 gdlr-normal-menu"><a href="speakers/index.html">Speakers &#038; Sponsors</a></li>
+<li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3404menu-item menu-item-type-post_type menu-item-object-page menu-item-3404 gdlr-normal-menu"><a href="watch/index.html">Watch / Videos</a></li>
+<li  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3680menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3680 gdlr-normal-menu"><a href="#">Past Events</a>
+<ul class="sub-menu">
+	<li  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3681"><a href="http://iotlive.org/one">#001</a></li>
+</ul>
+</li>
+<li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3483menu-item menu-item-type-post_type menu-item-object-page menu-item-3483 gdlr-normal-menu"><a href="contact-page/index.html">Contact</a></li>
+</ul></nav>	
+<span class="gdlr-menu-search-button-sep">|</span>
+<i class="fa fa-search icon-search gdlr-menu-search-button" id="gdlr-menu-search-button" ></i>
+<div class="gdlr-menu-search" id="gdlr-menu-search">
+	<form method="get" id="searchform" action="http://iotlive.org/two/">
+				<div class="search-text">
+			<input type="text" value="Type Keywords" name="s" autocomplete="off" data-default="Type Keywords" />
+		</div>
+		<input type="submit" value="" />
+		<div class="clear"></div>
+	</form>	
+</div>		
+<div class="gdlr-navigation-gimmick" id="gdlr-navigation-gimmick"></div><div class="clear"></div></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</header>
+	<div id="gdlr-header-substitute" ></div>
+	
+		<!-- is search -->	<div class="content-wrapper">
+	<div class="gdlr-content">
+
+		<!-- Above Sidebar Section-->
+						
+		<!-- Sidebar With Content Section-->
+		<div class="with-sidebar-wrapper gdlr-type-no-sidebar"><section id="content-section-1" ><div class="gdlr-full-size-wrapper gdlr-show-all"  style="padding-bottom: 0px;  background-color: #ffffff; "  ><div class="gdlr-master-slider-item gdlr-slider-item gdlr-item"  id="1"  style="margin-bottom: 0px;"  >
+		<!-- MasterSlider -->
+		<div id="P_MS57db2a897c9d9" class="master-slider-parent ms-parent-id-1"  >
+				
+			
+			<!-- MasterSlider Main -->
+			<div id="MS57db2a897c9d9" class="master-slider ms-skin-default" >
+				 				 
+				<div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
+					<img src="wp-content/plugins/masterslider/public/assets/js/blank.html" alt="" title="" data-src="wp-content/uploads/2015/03/base.jpg" />
+
+					<img  class="ms-layer" src="wp-content/plugins/masterslider/public/assets/js/blank.html" data-src="http://iotlive.org/two/wp-content/uploads/2015/03/iotlive-text-white.png" alt="" style=""  data-duration="387" data-delay="362" data-ease="easeOutQuint"        data-type="image"         data-offset-x="2" data-offset-y="-188" data-origin="mc" />
+
+					<div  class="ms-layer  msp-cn-1-1" style=""  data-effect="t(true,n,-100,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="550" data-delay="487" data-ease="easeOutQuint"                data-offset-x="22" data-offset-y="-99" data-origin="mc" >
+Virtual Conference</div>
+
+					<img  class="ms-layer" src="wp-content/plugins/masterslider/public/assets/js/blank.html" data-src="http://iotlive.org/two/wp-content/uploads/2015/03/icon.png" alt="IoTLive Icon" style="width:300px;"  data-duration="412" data-delay="725" data-ease="easeOutQuint"        data-type="image"         data-offset-x="441" data-offset-y="268" data-origin="tl" />
+
+					<div  class="ms-layer  msp-cn-1-7" style=""  data-effect="t(true,n,n,500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="600" data-delay="1387" data-ease="easeOutQuint"                data-offset-x="453" data-offset-y="152" data-origin="ml" >
+April 9th</div>
+
+					<div  class="ms-layer  msp-cn-1-8" style="width:250px;"  data-effect="t(true,n,n,500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="687" data-delay="1725" data-ease="easeOutQuint"                data-offset-x="102" data-offset-y="153" data-origin="mc" >
+<em>//  Free </em>- Online</div>
+
+					<a  href="watch/index.html" target="_self" class="ms-layer  msp-cn-1-11 ms-btn ms-btn-circle ms-btn-n msp-preset-btn-127" data-effect="t(true,n,n,500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="725" data-delay="2662" data-ease="easeOutQuint"        data-type="button"        data-offset-x="-12" data-offset-y="-53" data-origin="mc"  >
+Watch / Register</a>
 
 
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
+				</div>
 
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
+			</div>
+			<!-- END MasterSlider Main -->
 
-</body>
+			 
+		</div>
+		<!-- END MasterSlider --> 
+		
+		<script>
+		(function ( $ ) {
+			"use strict";
 
+			$(function () {
+				var masterslider_c9d9 = new MasterSlider();
+
+				// slider controls
+                    
+				masterslider_c9d9.control('bullets'    ,{ autohide:true, overVideo:true, dir:'h', align:'bottom', space:6 , margin:20 , hideUnder:420 });
+				// slider setup
+				masterslider_c9d9.setup("MS57db2a897c9d9", {
+						width           : 1180,
+						height          : 600,
+						space           : 0,
+						start           : 1,
+						grabCursor      : true,
+						swipe           : true,
+						mouse           : false,
+						layout          : "fullwidth", 
+						wheel           : false,
+						autoplay        : false,
+						instantStartLayers:false,
+						loop            : true,
+						shuffle         : false,
+						preload         : 0,
+						heightLimit     : true,
+						autoHeight      : false,
+						smoothHeight    : true,
+						endPause        : false,
+						overPause       : true,
+						fillMode        : "fill", 
+						centerControls  : true,
+						layersMode      : "center", 
+						hideLayers      : false, 
+						fullscreenMargin: 0,
+						speed           : 20, 
+						dir             : "h", 
+						parallaxMode    : 'swipe',
+						view            : "wave"
+				});
+				
+
+								MSScrollParallax.setup( masterslider_c9d9, 30, 50, true );
+				$("head").append( "<link rel='stylesheet' id='ms-fonts'  href='//fonts.googleapis.com/css?family=Raleway:300,800' type='text/css' media='all' />" );
+
+				window.masterslider_instances = window.masterslider_instances || {};
+				window.masterslider_instances["1_c9d9"] = masterslider_c9d9;
+			 });
+			
+		})(jQuery);
+		</script> 
+		
+</div><div class="clear"></div><div class="clear"></div></div><div class="clear"></div></section><section id="content-section-2" ><div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 65px; padding-bottom: 35px; " ><div class="container"><div class="twelve columns" ><div class="gdlr-title-item"  style="margin-bottom: 5px;"  ><div class="gdlr-item-title-wrapper gdlr-item pos-center "><div class="gdlr-item-title-head"><h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">IoTLive #002</h3><div class="clear"></div></div></div></div><div class="gdlr-image-frame-item gdlr-item"  ><div class="gdlr-frame frame-type-none"  ><div class="gdlr-image-link-shortcode" ><img src="wp-content/uploads/2014/12/banner.jpg" alt="" width="1000" height="250" /></div></div></div><div class="gdlr-title-item"  ><div class="gdlr-item-title-wrapper gdlr-item pos-center "><div class="gdlr-item-title-head"><h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Solving the Unanswered Questions in the IoT</h3><div class="clear"></div></div><div class="gdlr-item-title-divider"></div></div></div><div class="gdlr-item gdlr-content-item" ><p style="text-align: center;"><a class="gdlr-button medium with-border" href="watch/index.html" target="_self"  style="color:#ffffff; background-color:#222222; border-color:#01A64F; "  ><i class="gdlr-icon fa fa-youtube-play"  ></i> Watch Live Event &#8211; Add to calendar</a></p>
+</div></div><div class="clear"></div><div class="three-fifth columns" ><div class="gdlr-ux column-service-ux"><div class="gdlr-item gdlr-column-service-item gdlr-type-1" ><div class="column-service-icon gdlr-skin-box"><i class="fa fa-flash" ></i></div><div class="column-service-content-wrapper"><h3 class="column-service-title">IoT Live #002</h3><div class="column-service-content gdlr-skin-content"><h3>IoTLive will host a series of online discussions from the Global IoT Community as part of the Fifth Annual <a href="http://iotday.org/">Internet of Things Day</a> on April 9th.</h3>
+<h3>We plan to kick off the event in Europe and finish on the west coast of North America.</h3>
+</div></div></div></div><div class="gdlr-item-title-wrapper gdlr-item pos-center gdlr-nav-container "><div class="gdlr-item-title-head"><h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Speaker lineup</h3><div class="gdlr-item-title-nav"><i class="icon-angle-left gdlr-flex-prev"></i><i class="icon-angle-right gdlr-flex-next"></i></div><div class="clear"></div></div><div class="gdlr-item-title-divider"></div></div><div class="speaker-item-wrapper"  ><div class="speaker-item-holder gdlr-speaker-type-round"><div class="gdlr-item gdlr-speaker-carousel-wrapper"><div class="flexslider" data-type="carousel" data-nav-container="speaker-item-wrapper" data-columns="4" ><ul class="slides" ><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/03/arlen-cirrus-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/pub/arlen-nipper/57/810/422" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/arlen-nipper/index.html" >Arlen Nipper</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >President and CTO, Cirrus Link</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/04/satish-cisco-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/in/satishkatpally" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/satish-katpally/index.html" >Satish Katpally</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >Senior Marketing Manager in the Product, Solutions and Industries Marketing (PSIM) team at Cisco</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/03/don-bailey-reolar-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/in/donabailey" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/don-bailey/index.html" >Don Bailey</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >CTO at Revolar</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/03/james-brightwolf-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/pub/james-branigan/5/7aa/0" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/james-branigan/index.html" >James Branigan</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >Co-Founder & Platform Architect Brightwolf</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/03/philip-linux-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/in/philipdesautels" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/philip-desautels/index.html" >Philip DesAutels</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >Senior Director of IoT at The Linux Foundation</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/03/larry-eurotech-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/profile/view?id=180412" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/larry-wall/index.html" >Larry Wall</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >CEO Eurotech Inc</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/03/doug-nio-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/pub/doug-standley/1/72b/4a6" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/doug-standley/index.html" >Doug Standley</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >Founder and CEO n.io</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/03/mike-bB-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/in/mikefahrion" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/mike-fahrion/index.html" >Mike Fahrion</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >Director of IoT and Edge Intelligence Product Development at B+B SmartWorx</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/03/glen-harbor-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/profile/view?id=37720" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/glen-allmendinger/index.html" >Glen Allmendinger</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >President Harbor Research</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/04/paul2-security-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/in/pfroberts" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/paul-roberts/index.html" >Paul Roberts</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >Founder & Editor-in-Chief, The Security Ledger and Security of Things Forum</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/04/charles-brivo-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/pub/charles-wheeler/23/12b/15" target="_blank"><i class="fa fa-linkedin" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/charles-wheeler/index.html" >Charles Wheeler</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >Senior Director of Operations at Brivo Systems</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/03/adam-dunkels-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/pub/adam-dunkels/16/92/43adam dunke" target="_blank"><i class="fa fa-linkedin fa-2" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/adam-dunkels/index.html" >Adam Dunkels</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >PhD. CEO and co-founder, Thingsquare</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/03/hans-exosite-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/in/hansrempel" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/hans-rempel-ceo-exosite/index.html" >Hans Rempel</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >CEO Exosite</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/04/dilip-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/in/dilipr" target="_blank"><i class="fa a-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/dilip-rahulan/index.html" >Dilip Rahulan</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >Executive Chairman & CEO of Pacific Controls</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/04/tom-zebra-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/in/berarducci" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/tom-berarducci/index.html" >Tom Berarducci</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >Director, Platform Product Management at Zebra Technologies</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/03/nicola-winext-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://it.linkedin.com/in/nicoladecarne" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/nicola-de-carne/index.html" >Nicola De Carne</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >Founder & CEO, Wi-NEXT</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/04/alex-golgi-150x150.jpg" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/in/aduncan" target="_blank"><i class="fa fa-linkedin-square" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/alex-duncan/index.html" >Alex Duncan</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >CEO/Co-Founder at Golgi</div></div></li><li class="gdlr-item gdlr-speaker-item"><div class="gdlr-speaker-thumbnail"><img src="wp-content/uploads/2015/04/Troy-3-150x150.png" alt="" width="150" height="150" /><span class="gdlr-speaker-thumbnail-overlay" ></span><span class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://www.linkedin.com/in/troyfoster" target="_blank"><i class="fa fa-linkedin" ></i></a></span></div><div class="gdlr-speaker-item-content"><h3 class="gdlr-speaker-item-title gdlr-skin-title"><a href="speaker/troy-foster/index.html" >Troy Foster</a></h3><div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info" >CEO at BlackPearl Development</div></div></li></ul></div></div><div class="clear"></div></div></div></div><div class="two-fifth columns" ><div class="gdlr-ux column-service-ux"><div class="gdlr-item gdlr-column-service-item gdlr-type-1"  style="margin-bottom: 5px;" ><div class="column-service-icon gdlr-skin-box"><i class="fa fa-icon-group" ></i></div><div class="column-service-content-wrapper"><h3 class="column-service-title">Event Overview</h3><div class="column-service-content gdlr-skin-content"><ul>
+<li><em><strong>Thought-provoking panels</strong></em> with some of the industry’s top thought leaders</li>
+<li><em><strong>Keynote sessions</strong></em> from leading IoT companies</li>
+<li><strong>Live demo sessions</strong> of the latest products and platforms</li>
+</ul>
+</div></div></div></div></div><div class="clear"></div></div></div><div class="clear"></div></section><section id="content-section-3" ><div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #f3f3f3; padding-top: 80px; padding-bottom: 15px; " ><div class="container"><div class="gdlr-item-title-wrapper gdlr-item pos-left-caption "><div class="gdlr-item-title-head"><h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">Program</h3><div class="gdlr-item-title-caption gdlr-skin-info"><h4>IoTLive runs throughout the day on April 9th, starting at <strong>7:30am EDT (1330 CEST)</strong> and going through final demo sessions from 4:15-5:15pm EDT (2215-2315 CEST)<br/></h4>
+</div><div class="clear"></div></div></div><div class="session-item-wrapper"  ><div class="gdlr-session-item gdlr-full-session-item gdlr-item" ><div class="gdlr-session-item-head gdlr-first"><div class="gdlr-session-item-head-info gdlr-active"><div class="gdlr-session-head-day">Day 1</div><div class="gdlr-session-head-date">09 Apr 2015</div></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="gdlr-session-item-content-info"><div class="gdlr-session-info"><div class="session-info session-time"><i class="fa fa-clock-o" ></i>7:30-8:25 EST</div><div class="session-info session-location"><i class="fa fa-location-arrow" ></i>(1330-1425 CEST)</div><div class="session-info session-speaker"><div class="session-speaker-inner"><i class="fa fa-user" ></i><div class="session-speaker-list"><div class="session-speaker-list-item"><a href="speaker/larry-wall/index.html" >Larry Wall</a></div><div class="session-speaker-list-item"><a href="speaker/eurotech/index.html" >Eurotech</a></div></div></div></div><div class="clear"></div></div></div><div class="gdlr-session-item-content" ><h3 class="gdlr-session-item-title"><a href="session/keynote/index.html">Keynote 1</a></h3><div class="gdlr-session-item-excerpt">Foundations to deliver and manage M2M data within the business enterprise.</div><div class="gdlr-session-thumbnail-wrapper"><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/larry-wall/index.html" ><img src="wp-content/uploads/2015/03/larry-eurotech-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Larry Wall</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/eurotech/index.html" ><img src="wp-content/uploads/2015/03/eurotech-150x150.png" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Eurotech</div></div></div></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="session-break-content"><div class="session-break-info"><i class="fa fa-clock-o" ></i>08:25 - 8:30 EST</div><h3 class="gdlr-session-break-title">5 Min INTERMISSION</h3></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="gdlr-session-item-content-info"><div class="gdlr-session-info"><div class="session-info session-time"><i class="fa fa-clock-o" ></i>8:30 - 9:10 EST</div><div class="session-info session-location"><i class="fa fa-location-arrow" ></i>(1330-1410 CEST)</div><div class="session-info session-speaker"><div class="session-speaker-inner"><i class="fa fa-user" ></i><div class="session-speaker-list"><div class="session-speaker-list-item"><a href="speaker/dilip-rahulan/index.html" >Dilip Rahulan</a></div></div></div></div><div class="clear"></div></div></div><div class="gdlr-session-item-content" ><h3 class="gdlr-session-item-title"><a href="session/next-generation-smart-cities/index.html">Industry Spotlight</a></h3><div class="gdlr-session-item-excerpt">Next Generation of Managed Services for Smart Cities</div><div class="gdlr-session-thumbnail-wrapper"><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/dilip-rahulan/index.html" ><img src="wp-content/uploads/2015/04/dilip-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Dilip Rahulan</div></div></div></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="session-break-content"><div class="session-break-info"><i class="fa fa-clock-o" ></i>9:10 - 9:15</div><h3 class="gdlr-session-break-title">5 Min Intermission</h3></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="gdlr-session-item-content-info"><div class="gdlr-session-info"><div class="session-info session-time"><i class="fa fa-clock-o" ></i>9:15-10:15 EST</div><div class="session-info session-location"><i class="fa fa-location-arrow" ></i>(1515-1615 CEST)</div><div class="session-info session-speaker"><div class="session-speaker-inner"><i class="fa fa-user" ></i><div class="session-speaker-list"><div class="session-speaker-list-item"><a href="speaker/tom-berarducci/index.html" >Tom Berarducci</a></div><div class="session-speaker-list-item"><a href="speaker/doug-standley/index.html" >Doug Standley</a></div><div class="session-speaker-list-item"><a href="speaker/glen-allmendinger/index.html" >Glen Allmendinger</a></div><div class="session-speaker-list-item"><a href="speaker/james-branigan/index.html" >James Branigan</a></div><div class="session-speaker-list-item"><a href="speaker/hans-rempel-ceo-exosite/index.html" >Hans Rempel</a></div></div></div></div><div class="clear"></div></div></div><div class="gdlr-session-item-content" ><h3 class="gdlr-session-item-title"><a href="session/evolution-of-iot-platforms/index.html">Panel 1 &#8211; The Evolution of IoT Platforms</a></h3><div class="gdlr-session-item-excerpt">//</div><div class="gdlr-session-thumbnail-wrapper"><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/tom-berarducci/index.html" ><img src="wp-content/uploads/2015/04/tom-zebra-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Tom Berarducci</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/doug-standley/index.html" ><img src="wp-content/uploads/2015/03/doug-nio-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Doug Standley</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/glen-allmendinger/index.html" ><img src="wp-content/uploads/2015/03/glen-harbor-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Glen Allmendinger</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/james-branigan/index.html" ><img src="wp-content/uploads/2015/03/james-brightwolf-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">James Branigan</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/hans-rempel-ceo-exosite/index.html" ><img src="wp-content/uploads/2015/03/hans-exosite-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Hans Rempel</div></div></div></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="session-break-content"><div class="session-break-info"><i class="fa fa-clock-o" ></i>10:15 - 10:25 EST</div><h3 class="gdlr-session-break-title">10 Min &#8211; INTERMISSION</h3></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="gdlr-session-item-content-info"><div class="gdlr-session-info"><div class="session-info session-time"><i class="fa fa-clock-o" ></i>10:25-11:25 EST</div><div class="session-info session-location"><i class="fa fa-location-arrow" ></i>(1625-1725 CEST)</div><div class="session-info session-speaker"><div class="session-speaker-inner"><i class="fa fa-user" ></i><div class="session-speaker-list"><div class="session-speaker-list-item"><a href="speaker/eugene-mazo/index.html" >Eugene Mazo</a></div><div class="session-speaker-list-item"><a href="speaker/alex-glaser/index.html" >Alex Glaser</a></div><div class="session-speaker-list-item"><a href="speaker/alex-duncan/index.html" >Alex Duncan</a></div><div class="session-speaker-list-item"><a href="speaker/philip-desautels/index.html" >Philip DesAutels</a></div><div class="session-speaker-list-item"><a href="speaker/adam-dunkels/index.html" >Adam Dunkels</a></div></div></div></div><div class="clear"></div></div></div><div class="gdlr-session-item-content" ><h3 class="gdlr-session-item-title"><a href="session/iot-development-tools/index.html">Panel 2 &#8211; IoT Development Tools</a></h3><div class="gdlr-session-item-excerpt">//</div><div class="gdlr-session-thumbnail-wrapper"><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/eugene-mazo/index.html" ><img src="wp-content/uploads/2015/04/eugene-dglogik-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Eugene Mazo</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/alex-glaser/index.html" ><img src="wp-content/uploads/2015/04/alex-harbor2-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Alex Glaser</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/alex-duncan/index.html" ><img src="wp-content/uploads/2015/04/alex-golgi-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Alex Duncan</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/philip-desautels/index.html" ><img src="wp-content/uploads/2015/03/philip-linux-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Philip DesAutels</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/adam-dunkels/index.html" ><img src="wp-content/uploads/2015/03/adam-dunkels-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Adam Dunkels</div></div></div></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="gdlr-session-item-content-info"><div class="gdlr-session-info"><div class="session-info session-time"><i class="fa fa-clock-o" ></i>11:30-12:15 EST</div><div class="session-info session-location"><i class="fa fa-location-arrow" ></i>(1730-1815 CEST)</div><div class="session-info session-speaker"><div class="session-speaker-inner"><i class="fa fa-user" ></i><div class="session-speaker-list"><div class="session-speaker-list-item"><a href="speaker/kevin-holbrook/index.html" >Kevin Holbrook</a></div><div class="session-speaker-list-item"><a href="speaker/thingworx/index.html" >Thingworx</a></div></div></div></div><div class="clear"></div></div></div><div class="gdlr-session-item-content" ><h3 class="gdlr-session-item-title"><a href="session/keynote-two/index.html">Keynote 2</a></h3><div class="gdlr-session-item-excerpt">Back to the IoT Future</div><div class="gdlr-session-thumbnail-wrapper"><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/kevin-holbrook/index.html" ><img src="wp-content/uploads/2015/04/kevin-thingworx-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Kevin Holbrook</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/thingworx/index.html" ><img src="wp-content/uploads/2015/03/thingworx-300-150x150.png" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Thingworx</div></div></div></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="gdlr-session-item-content-info"><div class="gdlr-session-info"><div class="session-info session-time"><i class="fa fa-clock-o" ></i>12:20 - 13:30 EST</div><div class="session-info session-location"><i class="fa fa-location-arrow" ></i>(1820-1930 CEST)</div><div class="session-info session-speaker"><div class="session-speaker-inner"><i class="fa fa-user" ></i><div class="session-speaker-list"><div class="session-speaker-list-item"><a href="speaker/troy-foster/index.html" >Troy Foster</a></div><div class="session-speaker-list-item"><a href="speaker/arlen-nipper/index.html" >Arlen Nipper</a></div><div class="session-speaker-list-item"><a href="speaker/glen-allmendinger/index.html" >Glen Allmendinger</a></div><div class="session-speaker-list-item"><a href="speaker/nicola-de-carne/index.html" >Nicola De Carne</a></div><div class="session-speaker-list-item"><a href="speaker/mike-fahrion/index.html" >Mike Fahrion</a></div></div></div></div><div class="clear"></div></div></div><div class="gdlr-session-item-content" ><h3 class="gdlr-session-item-title"><a href="session/iot-mission-critical-applications/index.html">Panel 3 &#8211; Market Development for Industrial, Mission Critical and Related Segment Applications</a></h3><div class="gdlr-session-item-excerpt">//</div><div class="gdlr-session-thumbnail-wrapper"><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/troy-foster/index.html" ><img src="wp-content/uploads/2015/04/Troy-3-150x150.png" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Troy Foster</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/arlen-nipper/index.html" ><img src="wp-content/uploads/2015/03/arlen-cirrus-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Arlen Nipper</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/glen-allmendinger/index.html" ><img src="wp-content/uploads/2015/03/glen-harbor-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Glen Allmendinger</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/nicola-de-carne/index.html" ><img src="wp-content/uploads/2015/03/nicola-winext-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Nicola De Carne</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/mike-fahrion/index.html" ><img src="wp-content/uploads/2015/03/mike-bB-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Mike Fahrion</div></div></div></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="gdlr-session-item-content-info"><div class="gdlr-session-info"><div class="session-info session-time"><i class="fa fa-clock-o" ></i>13:35-14:45 EST</div><div class="session-info session-location"><i class="fa fa-location-arrow" ></i>(1935-2045 CEST)</div><div class="session-info session-speaker"><div class="session-speaker-inner"><i class="fa fa-user" ></i><div class="session-speaker-list"><div class="session-speaker-list-item"><a href="speaker/charles-wheeler/index.html" >Charles Wheeler</a></div><div class="session-speaker-list-item"><a href="speaker/paul-roberts/index.html" >Paul Roberts</a></div><div class="session-speaker-list-item"><a href="speaker/chris-rouland/index.html" >Chris Rouland</a></div><div class="session-speaker-list-item"><a href="speaker/don-bailey/index.html" >Don Bailey</a></div></div></div></div><div class="clear"></div></div></div><div class="gdlr-session-item-content" ><h3 class="gdlr-session-item-title"><a href="session/iot-security-panel/index.html">Panel 4 &#8211; How Should We Really Be Addressing Security?</a></h3><div class="gdlr-session-item-excerpt">//</div><div class="gdlr-session-thumbnail-wrapper"><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/charles-wheeler/index.html" ><img src="wp-content/uploads/2015/04/charles-brivo-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Charles Wheeler</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/paul-roberts/index.html" ><img src="wp-content/uploads/2015/04/paul2-security-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Paul Roberts</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/chris-rouland/index.html" ><img src="wp-content/uploads/2015/03/chris-bastille-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Chris Rouland</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/don-bailey/index.html" ><img src="wp-content/uploads/2015/03/don-bailey-reolar-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Don Bailey</div></div></div></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="session-break-content"><div class="session-break-info"><i class="fa fa-clock-o" ></i>14:45 - 15:00</div><h3 class="gdlr-session-break-title">15 Minute Intermission</h3></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="gdlr-session-item-content-info"><div class="gdlr-session-info"><div class="session-info session-time"><i class="fa fa-clock-o" ></i>15:00-15:45 EST</div><div class="session-info session-location"><i class="fa fa-location-arrow" ></i>(2100-2145 CEST)</div><div class="session-info session-speaker"><div class="session-speaker-inner"><i class="fa fa-user" ></i><div class="session-speaker-list"><div class="session-speaker-list-item"><a href="speaker/satish-katpally/index.html" >Satish Katpally</a></div><div class="session-speaker-list-item"><a href="speaker/cisco/index.html" >Cisco</a></div></div></div></div><div class="clear"></div></div></div><div class="gdlr-session-item-content" ><h3 class="gdlr-session-item-title"><a href="session/keynote-3/index.html">Closing Keynote</a></h3><div class="gdlr-session-item-excerpt">The Internet of Things Is Here</div><div class="gdlr-session-thumbnail-wrapper"><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/satish-katpally/index.html" ><img src="wp-content/uploads/2015/04/satish-cisco-150x150.jpg" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Satish Katpally</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/cisco/index.html" ><img src="wp-content/uploads/2015/03/cisco-300-150x150.png" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Cisco</div></div></div></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="session-break-content"><div class="session-break-info"><i class="fa fa-clock-o" ></i>15:45 - 16:15</div><h3 class="gdlr-session-break-title">30 Min – INTERMISSION</h3></div><div class="clear"></div></div><div class="gdlr-session-item-content-wrapper"><div class="gdlr-session-item-divider"></div><div class="gdlr-session-item-content-info"><div class="gdlr-session-info"><div class="session-info session-time"><i class="fa fa-clock-o" ></i>16:15-17:50 EST</div><div class="session-info session-location"><i class="fa fa-location-arrow" ></i>(2215-2350 CEST)</div><div class="session-info session-speaker"><div class="session-speaker-inner"><i class="fa fa-user" ></i><div class="session-speaker-list"><div class="session-speaker-list-item"><a href="speaker/zatar/index.html" >Zatar &#8211; Zebra Technologies</a></div><div class="session-speaker-list-item"><a href="speaker/glassbeam/index.html" >Glassbeam</a></div><div class="session-speaker-list-item"><a href="speaker/pubnub/index.html" >PubNub</a></div><div class="session-speaker-list-item"><a href="speaker/crowsnest/index.html" >Crowsnest</a></div></div></div></div><div class="clear"></div></div></div><div class="gdlr-session-item-content" ><h3 class="gdlr-session-item-title"><a href="session/iot-demos/index.html">IoT Demo Sessions</a></h3><div class="gdlr-session-item-excerpt">//</div><div class="gdlr-session-thumbnail-wrapper"><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/zatar/index.html" ><img src="wp-content/uploads/2015/03/zatar-zebra-150x150.png" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Zatar &#8211; Zebra Technologies</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/glassbeam/index.html" ><img src="wp-content/uploads/2015/04/glassbeam1-150x150.png" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Glassbeam</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/pubnub/index.html" ><img src="wp-content/uploads/2015/04/pubnub300-150x150.png" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">PubNub</div></div><div class="gdlr-speaker-thumbnail"><div class="gdlr-speaker-thumbnail-inner"><a href="speaker/crowsnest/index.html" ><img src="wp-content/uploads/2015/04/crowsnest300-150x150.png" alt="" width="150" height="150" /></a></div><div class="gdlr-speaker-thumbnail-title">Crowsnest</div></div></div></div><div class="clear"></div></div></div><div class="clear"></div></div><div class="clear"></div><div class="clear"></div></div></div><div class="clear"></div></section></div>
+		
+		<!-- Below Sidebar Section-->
+					<div class="below-sidebar-wrapper"><section id="content-section-4" ><div class="section-container container"><div class="gdlr-title-item"  style="margin-bottom: 5px;"  ><div class="gdlr-item-title-wrapper gdlr-item pos-center "><div class="gdlr-item-title-head"><h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">Event Sponsors</h3><div class="clear"></div></div><div class="gdlr-item-title-caption gdlr-skin-info">Keynote sessions<br/>
+brought to you by:</div></div></div><div class="clear"></div><div class="clear"></div><div class="gdlr-banner-item-wrapper"><div class="gdlr-banner-images gdlr-item"  style="margin-bottom: 10px;" ><div class="flexslider" data-pausetime="7000" data-slidespeed="600" data-effect="fade" data-columns="3" data-type="carousel" data-nav-container="gdlr-banner-images" ><ul class="slides" ><li><a href="speaker/cisco/index.html" data-rel="fancybox" target="_blank" ><img src="wp-content/uploads/2014/12/cisco2-300x300.png" alt="" width="300" height="300" /></a></li><li><a href="http://www.thingworx.com/" data-rel="fancybox" target="_blank" ><img src="wp-content/uploads/2015/03/thingworx-300-300x300.png" alt="" width="300" height="300" /></a></li><li><a href="speaker/eurotech/index.html" data-rel="fancybox" target="_blank" ><img src="wp-content/uploads/2014/12/eurotech-300x300.png" alt="" width="300" height="300" /></a></li></ul></div></div></div><div class="clear"></div><div class="clear"></div><div class="gdlr-title-item"  style="margin-bottom: 5px;"  ><div class="gdlr-item-title-wrapper gdlr-item pos-center "><div class="gdlr-item-title-head"><h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Demo Sessions</h3><div class="clear"></div></div><div class="gdlr-item-title-divider"></div><div class="gdlr-item-title-caption gdlr-skin-info">Brought to you by</div></div></div><div class="clear"></div><div class="two-fifth columns" ><div class="gdlr-image-frame-item gdlr-item"  ><div class="gdlr-frame frame-type-none"  ><div class="gdlr-image-link-shortcode" ><img src="wp-content/uploads/2014/12/demoimage.png" alt="" width="726" height="250" /></div></div></div></div><div class="three-fifth columns" ><div class="gdlr-banner-item-wrapper"><div class="gdlr-banner-images gdlr-item"  style="margin-bottom: 10px;" ><div class="flexslider" data-pausetime="7000" data-slidespeed="600" data-effect="fade" data-columns="2" data-type="carousel" data-nav-container="gdlr-banner-images" ><ul class="slides" ><li><a href="http://zatar.com/" data-rel="fancybox" target="_blank" ><img src="wp-content/uploads/2015/03/zatar-zebra-150x150.png" alt="" width="150" height="150" /></a></li><li><a href="speaker/glassbeam/index.html" data-rel="fancybox" target="_blank" ><img src="wp-content/uploads/2015/04/glassbeam1-150x150.png" alt="" width="150" height="150" /></a></li></ul></div></div></div></div><div class="clear"></div></div></section></div>
+		
+		
+	</div><!-- gdlr-content -->
+		<div class="clear" ></div>
+	</div><!-- content wrapper -->
+
+		
+	<footer class="footer-wrapper" >
+				<div class="footer-container container">
+										<div class="footer-column four columns" id="footer-widget-1" >
+					<div id="text-2" class="widget widget_text gdlr-item gdlr-widget"><h3 class="gdlr-widget-title">IoT Live: #002</h3><div class="clear"></div>			<div class="textwidget"><h3>SOLVING THE UNANSWERED QUESTIONS IN THE IOT</h3>
+<h4><a href="watch/index.html">April 9th -- Online</a></h4></div>
+		</div>				</div>
+										<div class="footer-column four columns" id="footer-widget-2" >
+					<div id="text-3" class="widget widget_text gdlr-item gdlr-widget"><h3 class="gdlr-widget-title">Presented By</h3><div class="clear"></div>			<div class="textwidget"><a href="http://harborresearch.com/"><img src="wp-content/uploads/2015/04/harbor-whiteleft.png" alt="Harbor Research" ></a></br></br>
+<a href="http://postscapes.com/"><img src="wp-content/uploads/2015/04/white-postscapes.png" alt="Postscapes" ></a></div>
+		</div>				</div>
+										<div class="footer-column four columns" id="footer-widget-3" >
+					<div id="yikes_mc_widget-2" class="widget widget_yikes_mc_widget gdlr-item gdlr-widget"><h3 class="gdlr-widget-title">Watch the livestream</h3><div class="clear"></div><p class="yikes-mailchimp-form-description yikes-mailchimp-form-description-593ce6af3d"></p>
+<script type="text/javascript">
+$ymce = jQuery.noConflict();
+	jQuery(document).ready(function($ymce){
+	
+		/* Blank Field Check */
+		function blankFieldCheck(formID) {
+				err	= 0;
+				msg	= '';
+				
+if ($ymce('#0-593ce6af3d-email').val() == ''){
+												msg += '<li>Email Address'+'\n</li>';
+												err++;
+												$ymce('#0-593ce6af3d-email').addClass('yks_error_field_required shake animated').delay(1200).queue(function(next){
+												$ymce(this).removeClass('shake animated');
+												next();
+											});
+										} else {
+											$ymce('#0-593ce6af3d-email').removeClass('yks_error_field_required');
+										}
+				if(msg != '')
+					{
+					jQuery('#yks_form_error_message').remove();
+					// set up our alert for empty fields,
+					msg	= "Error - The following fields are required, and may not be left blank "+":\n\n"+'<ul>'+msg+'</ul>';
+					// prepend the notification to the user instead of alerting it	
+						// fade it in
+						// and slide the user back up the the message so they don't miss it.
+						jQuery('#yks-mailchimp-form_'+formID).prepend('<span id="yks_form_error_message">'+	msg+'</span>').delay(550).queue(function(next){
+									jQuery('#yks_form_error_message').fadeIn();
+									var offset_top = jQuery('#yks-mailchimpFormContainerInner_'+formID).offset().top;
+									jQuery("html, body").animate({ scrollTop: offset_top - 50 }, 500 );
+									next();
+								});			
+						
+					}
+				return (err > 0 ? false : true);
+			}
+		
+		/*
+			Added event listener to form submission
+			@since v5.2
+		*/
+		$ymce( 'body' ).on( 'submit' , '#yks-mailchimp-form_0-593ce6af3d' , function(e) {	
+	
+			var singleOptinMessage = '<p>Thank You for subscribing!</p>\n';
+			var doubleOptinMessage = '<p>Thank You for subscribing! Check your email for the confirmation message.</p>\n';
+			var optinValue = 'false';
+			
+			e.preventDefault();
+			
+			// Make sure the api key exists
+			if( blankFieldCheck( "0-593ce6af3d" ) ) {
+			
+				// append pre-loader to submit button for some feedback
+				$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'input[type="submit"]' ).after( '<img src="http://iotlive.org/two/wp-admin/images/wpspin_light.gif" alt="yks-mc-submit-preloader" class="yks-mc-submit-preloader" style="margin-left:1em;box-shadow:none;">' );
+				
+				var form_data = $ymce(this).serialize();
+				
+				// disable all input fields while the data send...
+				$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'input' ).each(function() {
+					$ymce(this).attr('disabled','disabled').css('opacity','.8');
+				});
+				// disable all select fields while the data send...
+				$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'select' ).each(function() {
+					$ymce(this).attr('disabled','disabled').css('opacity','.8');
+				});
+				
+				$ymce('#ykfmc-submit_0-593ce6af3d').attr('disabled', 'disabled');
+				$ymce('#yks-status-0-593ce6af3d').fadeOut('fast');
+				$ymce('#yks_form_error_message').fadeOut();
+				$ymce('.preloader-confirmation-box').remove();
+				
+					$ymce.ajax({
+						type:	'POST',
+						url:	'http://iotlive.org/two/wp-admin/admin-ajax.php',
+						data: {
+									action:				'yks_mailchimp_form_submit',
+									form_action:		'frontend_submit_form',
+									form_data:			form_data
+									},
+						dataType: 'json',
+						success: function(MAILCHIMP)
+							{
+							if( MAILCHIMP == 1 )
+								{
+									
+									// remove the preloader
+									jQuery( '.yks-mc-submit-preloader' ).remove();
+									
+									// re-enable all input fields while the data send...
+									$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').children().each(function() {
+										$ymce(this).not('#wrapper').removeAttr( 'disabled' ).css( 'opacity' , '1' );
+									});
+									
+									// re-enable all select fields while the data send...
+									$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'select' ).each(function() {
+										$ymce(this).removeAttr('disabled').css('opacity','1');
+									});
+															
+									// custom message based on opt-in settings value
+									// single opt-in
+									if ( optinValue == 'false' ) {
+										$ymce('#yks-status-0-593ce6af3d').html('<div class="yks-success"><p>'+singleOptinMessage+'</p></div>');		
+									} else { // double opt-in
+										$ymce('#yks-status-0-593ce6af3d').html('<div class="yks-success"><p>'+doubleOptinMessage+'</p></div>');		
+									}
+									
+									/** Header Call Out Submission **/
+									if ( $ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').hasClass( 'header-callout-form' ) ) {
+										
+										var container_height = $ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( '#wrapper' ).css( 'height' );
+										var container_width = $ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( '#wrapper' ).css( 'width' );
+										var top_margin_confirmation = ( container_height.replace( 'px' , '' , container_height ) - 25 ) / 2;
+										
+										$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( '#wrapper' ).css( 'height' , container_height ).css( 'width' , container_width );
+											$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( '#wrapper' ).children().each(function() {
+												$ymce(this).fadeOut('fast');
+											}).promise().done( function() {
+												var confirmation_message = $ymce('#yks-status-0-593ce6af3d');
+												$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( '#wrapper' ).html( confirmation_message );
+												$ymce( confirmation_message ).removeClass('yks-status').fadeIn('fast').attr( 'style' , 'text-align:center;vertical-align:middle;margin-top:19%;');
+											});
+											
+										
+									} else {
+									
+										// remove the preloader
+										jQuery( '.yks-mc-submit-preloader' ).remove();
+										
+										// re-enable all input fields while the data send...
+										$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find('input').each(function() {
+											$ymce(this).not('#wrapper').removeAttr( 'disabled' ).css( 'opacity' , '1' );
+										});
+										
+										// re-enable all select fields while the data send...
+										$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'select' ).each(function() {
+											$ymce(this).removeAttr('disabled').css('opacity','1');
+										});
+									
+										/* reset the form, append the confirmation before the form */
+										$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'input[type="text"]', 'textarea' ).val( '' );
+										$ymce('#yks-status-0-593ce6af3d').fadeIn('fast');
+										
+									
+									}
+									
+								} else {	
+																							
+									// bundle the MailChimp returned error
+									// with our yks mc error messages
+									$ymce('#yks_form_error_message').fadeOut('fast', function() {
+										jQuery(this).remove();
+									});
+									
+									$ymce('#ykfmc-submit_0-593ce6af3d').removeAttr('disabled');
+																		
+									if( MAILCHIMP.errorResponse.toLowerCase().indexOf( "is already subscribed to the list." ) >= 0 ) {
+									
+										$ymce('#yks-mailchimp-form_0-593ce6af3d').prepend('<span id="yks_form_error_message">'+MAILCHIMP.errorResponse+' <a href="#" class="update-email-profile-link" alt="'+extractEmails(MAILCHIMP.errorResponse)+'">Click Here</a> to send an email to update your profile.</span>').delay(1000).queue(function(next){
+											// remove the preloader
+											jQuery( '.yks-mc-submit-preloader' ).remove();
+											
+											// remove disable from all input fields while the data send...
+											$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'input' ).each(function() {
+												$ymce(this).removeAttr( 'disabled' ).css('opacity','1');
+											});
+											// re-enable all select fields while the data send...
+											$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'select' ).each(function() {
+												$ymce(this).removeAttr('disabled').css('opacity','1');
+											});
+											
+											jQuery('#yks_form_error_message').fadeIn();
+											var offset_top = jQuery('#yks-mailchimpFormContainerInner_0-593ce6af3d').offset().top;
+											jQuery("html, body").animate({ scrollTop: offset_top - 50 }, 500 );
+											next();
+										});
+											
+									} else {
+									
+										$ymce('#yks-mailchimp-form_0-593ce6af3d').prepend('<span id="yks_form_error_message">'+MAILCHIMP.errorResponse+'</span>').delay(1000).queue(function(next){
+											// remove the preloader
+											jQuery( '.yks-mc-submit-preloader' ).remove();
+											
+											// remove disable from all input fields while the data send...
+											$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'input' ).each(function() {
+												$ymce(this).removeAttr( 'disabled' ).css('opacity','1');
+											});
+											// re-enable all select fields while the data send...
+											$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'select' ).each(function() {
+												$ymce(this).removeAttr('disabled').css('opacity','1');
+											});
+											
+											jQuery('#yks_form_error_message').fadeIn();
+											var offset_top = jQuery('#yks-mailchimpFormContainerInner_0-593ce6af3d').offset().top;
+											jQuery("html, body").animate({ scrollTop: offset_top - 50 }, 500 );
+											next();
+										});
+										
+									}
+									
+																	
+								}
+							},
+							// append our error up above, much like the others!
+							error: function(error) {
+								jQuery( '#yks_form_error_message' ).remove();
+								jQuery( '.yks-mc-submit-preloader' ).remove();
+								jQuery( '.ykfmc-submit' ).removeAttr( 'disabled' );
+								jQuery('#yks_form_error_message').fadeIn();
+								jQuery('#yks-mailchimp-form_0-593ce6af3d').prepend('<span id="yks_form_error_message">'+error.responseText+'</span>').delay(1000).queue(function(next){
+									// remove the preloader
+									jQuery( '.yks-mc-submit-preloader' ).remove();
+											
+									// remove disable from all input fields while the data send...
+									$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'input' ).each(function() {
+										$ymce(this).removeAttr( 'disabled' ).css('opacity','1');
+									});
+									
+									// re-enable all select fields while the data send...
+									$ymce('#yks-mailchimpFormContainerInner_0-593ce6af3d').find( 'select' ).each(function() {
+										$ymce(this).removeAttr('disabled').css('opacity','1');
+									});
+												
+									jQuery('#yks_form_error_message').fadeIn();
+									var offset_top = jQuery('#yks-mailchimpFormContainerInner_0-593ce6af3d').offset().top;
+									jQuery("html, body").animate({ scrollTop: offset_top - 50 }, 500 );
+									next();
+								});
+								console.log( error );
+							}	
+					});
+				}
+			return false;
+		});
+		
+		
+				
+		
+		jQuery( 'body' ).on( 'click' , '.update-email-profile-link' , function() {
+			jQuery( '.preloader-confirmation-box' ).remove();
+			var user_email = jQuery(this).attr('alt');
+			var list_id = jQuery(this).parents('form').attr('rel');
+			var list_id_split = list_id.split( '-' );
+			var list_id_final = list_id_split[1];
+			jQuery( '#yks_form_error_message' ).after( '<span class="preloader-confirmation-box"><img src="http://iotlive.org/two/wp-admin/images/wpspin_light.gif" class="yks-mc-resend-email-preloader" style="box-shadow:none;"></span>' );
+			$ymce.ajax({
+						type:	'POST',
+						url:	'http://iotlive.org/two/wp-admin/admin-ajax.php',
+						data: {
+							action: 'yks_mailchimp_form_submit',
+							form_action: 'send_update_email',
+							user_email: user_email,
+							list_id : list_id_final
+						},
+						dataType: 'html',
+						success: function(response) {	
+								jQuery( '.preloader-confirmation-box' ).html( response );
+								console.log('success' + response);
+							},
+						error: function(errorResponse) {
+								jQuery( '.preloader-confirmation-box' ).html( errorResponse );
+								console.log(errorResponse);
+							}
+					});
+			return false;
+		});
+		
+	});
+	
+	function extractEmails(text) {
+		return text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+	}
+		
+</script>
+
+		<style>	
+			#ykfmc-submit_0-593ce6af3d {
+				background: #3ed664;
+				color: #fff;
+			}
+			.yks-mailchimpFormContainer-0-593ce6af3d {
+				background: #fff;
+				padding: 1em;
+				color: #333;
+				width: 100%;
+							}
+			.yks-mailchimpFormDivRowLabel, .yks_mc_interest_group_label {
+				color: #333;
+			}
+		</style>
+		<div class="yks-mailchimpFormContainer yks-mailchimpFormContainer-0-593ce6af3d">
+
+			<div class="yks-status" id="yks-status-0-593ce6af3d"></div>
+		
+	<div class="yks-mailchimpFormContainerInner" id="yks-mailchimpFormContainerInner_0-593ce6af3d">	
+				<form method="post" name="yks-mailchimp-form" id="yks-mailchimp-form_0-593ce6af3d" rel="0-593ce6af3d">
+			<input type="hidden" name="yks-mailchimp-list-ct" id="yks-mailchimp-list-ct_0-593ce6af3d" value="0" />
+			<input type="hidden" name="yks-mailchimp-list-id" id="yks-mailchimp-list-id_0-593ce6af3d" value="593ce6af3d" />
+									<div class="yks-mailchimpFormDiv">
+															<div class="yks-mailchimpFormDivRow yks-mc-form-row-email-address" >
+									<label class="prompt yks-mailchimpFormDivRowLabel yks-mailchimpFormDivRowLabel-required yks-mc-label-email-address" for="0-593ce6af3d-email">Email Address <span class='yks-required-label'>*</span></label>
+									<div class="yks-mailchimpFormDivRowField yks-mc-input-field-row-email-address">
+										<!-- run our function to generate the input fields for the form, passing in the field -->
+										<input type="text" name="593ce6af3dEMAIL" placeholder="" class="593ce6af3dEMAIL yks-require  yks-mc-input-email-address" id="0-593ce6af3d-email" value="" />									</div>
+								</div>	
+															<!-- add our nonce field for security purposes -->
+							<div class="yks-mailchimpFormDivRow">
+								<input type="hidden" id="_wpnonce" name="_wpnonce" value="cb2c348330" /><input type="hidden" name="_wp_http_referer" value="/two/" />							</div>	
+									
+							<div class="yks-mailchimpFormDivRow">
+								<!-- run our function to generate the interest group fields for the form, passing in the form id -->
+																<div class="yks-mailchimpFormDivSubmit">
+																		<p><input type="submit" class="ykfmc-submit" id="ykfmc-submit_0-593ce6af3d" value="Get a reminder email" /></p>
+								</div>
+							</div>
+						</div>
+								</form>
+	</div>			
+</div></div>				</div>
+									<div class="clear"></div>
+		</div>
+				
+				<div class="copyright-wrapper">
+			<div class="copyright-container container">
+				<div class="copyright-left">
+					© IoTLive				</div>
+				<div class="copyright-right">
+					<p style="font-size:12px; font-style:italic;">Image Credits:<br>
+        <em>CC Attribution - <a href="http://www.flickr.com/photos/cogdog/5560625860/sizes/l/in/photostream/">OnAir</a> (cogdogblog) // <a href="../../commons.wikimedia.org/wiki/File_DMI_conference.html">Conf</a> (Wiki4des) // <a href="http://www.flickr.com/photos/itupictures/11966619236/sizes/l/in/photostream/">Workshop</a> (itupictures) // <a href="http://www.flickr.com/photos/itupictures/11966057863/sizes/l/in/photostream/">Speaker</a> (itupictures)</em></p>
+<a href="https://plus.google.com/+IotliveOrg" rel="publisher">Google+</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+			</footer>
+	</div> <!-- body-wrapper -->
+<script type="text/javascript"></script><link rel='stylesheet' id='ykseme-css-base-css'  href='wp-content/plugins/yikes-inc-easy-mailchimp-extender/css/style.ykseme.min8a54.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ykseme-animate-css-css'  href='wp-content/plugins/yikes-inc-easy-mailchimp-extender/css/animate8a54.css?ver=1.0.0' type='text/css' media='all' />
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/jquery.form.mind03d.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/iotlive.org\/two\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts3a05.js?ver=4.2.2'></script>
+<script type='text/javascript' src='wp-content/themes/thekeynote-v1-03/plugins/superfish/js/superfish5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-includes/js/hoverIntent.minc245.js?ver=1.8.1'></script>
+<script type='text/javascript' src='wp-content/themes/thekeynote-v1-03/plugins/dl-menu/modernizr.custom5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/thekeynote-v1-03/plugins/dl-menu/jquery.dlmenu5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/thekeynote-v1-03/plugins/jquery.easing5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/thekeynote-v1-03/plugins/fancybox/jquery.fancybox.pack5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/thekeynote-v1-03/plugins/fancybox/helpers/jquery.fancybox-media5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/thekeynote-v1-03/plugins/fancybox/helpers/jquery.fancybox-thumbs5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/thekeynote-v1-03/plugins/flexslider/jquery.flexslider5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/thekeynote-v1-03/javascript/gdlr-script5152.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/plugins/masterslider/public/assets/js/masterslider.min7d47.js?ver=2.9.6'></script>
+<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+
+<!-- Mirrored from iotlive.org/two/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Sep 2016 23:12:11 GMT -->
 </html>
-
-
